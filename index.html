@@ -7,7 +7,7 @@
 
 body{
     font-family: DELUCE;
-    background-image: url('webbg.jpeg'); /* ganti dengan nama gambar kamu */
+    background-image: url('webbg.jpg'); /* ganti dengan nama gambar kamu */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,19 +29,50 @@ margin-top:10px;
 margin-bottom:20px;
 }
 
-.btn{
-display:block;
-background:white;
-padding:18px;
-margin:15px auto;
-width:90%;
-border-radius:40px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+.btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 12px;
+            font-weight: solomon;
+            background-color: #6ecbff;
+
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+        }
+        .qr-box {
+    display: none;
+    margin-top: 20px;
+    
 }
 
+.qr-box img {
+    width: 200px;
+    font-weight: solomon;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+.qr-box img {
+    width: 200px;
+    border-radius: 10px;
+
+    /* glow putih biar matching sama tombol kamu */
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+.qr-box p {
+    color: white;
+    margin-top: 10px;
+    font-weight: solomon;
+}
 .accordion{
 width:90%;
 margin:auto;
@@ -69,95 +100,26 @@ font-size:14px;
 
 <img src="Gambar profil.jpeg" class="profile">
 
-<h1>IYA   AYI</h1>
-
+<h1>IYA     AYI</h1>
 <div class="tagline">
 Hai Semua Salam Kenal<br>
-Jangan Lupa Makan
+Jangan Lupa Makan<br>
+Open Colab/ Jasa Edit
 </div>
 
-<a class="btn" href="#">JASA EDIT VIDEO</a>
+<div class="sosial">
+    <a href="https://wa.me/6281234567890" target="_blank" class="btn wa">
+        WhatsApp
+    </a>
 
-<div class="accordion">
-
-<div class="item" onclick="toggle(this)">
-+ Harga Jasa Edit Video
-<div class="content">
-Video Preset    : Rp 5.000 <br>
-Video Postingan : Rp 10.000<br>
-Video Request   : Rp 25.000 - Rp 30.000 <br>
-Harga diatas Dari (15detik - 30 detik)
-</div>
-</div>
-
-<div class="item" onclick="toggle(this)">
-+ Pembayaran
-<div class="content">
-Dana<br>
-OVO<br>
-Gopay <br>
-
-</div>
+    <a href="https://sociabuzz.com/yayiyu18/tribe" target="_blank" class="btn sociabuzz">
+        Sociabuzz
+    </a>
+    <a img src="qr1.jpeg" class="btn qr">
+        QR DANA
+    </a>
 </div>
 
-
-
-<div class="item" onclick="toggle(this)">
-+ Lama Proses
-<div class="content">
-1 - 3 Jam Tergantung Antrian dan Tingkat Edit
-</div>
-</div>
-
-</div>
-
-<a class="btn" href="#">TOPUP DIAMOND FF</a>
-
-<div class="accordion">
-
-<div class="item" onclick="toggle(this)">
-+ Harga
-<div class="content">
-Tersedia Dari  Rp1.000 - Rp 10.000.000
-</div>
-</div>
-
-<div class="item" onclick="toggle(this)">
-+ Pembayaran
-<div class="content">
-Dana<br>
-OVO<br>
-QRIS
-</div>
-</div>
-
-<div class="item" onclick="toggle(this)">
-+ Lama Proses
-<div class="content">
-1 - 5 menit Tergantung Antrian  
-</div>
-</div>
-
-</div>
-
-<div class="tagline">
-<br>
-<br>
-WhastApp Admin <br>
-<a href="Ikuti saluran IYA  AYI di WhatsApp: https://whatsapp.com/channel/0029VbCDb532f3EDt8JYSw1p">Whatsapp disini</a>
-</div>
-<script>
-
-function toggle(el){
-let content = el.querySelector(".content");
-
-if(content.style.display === "block"){
-content.style.display="none";
-}else{
-content.style.display="block";
-}
-
-}
 
 </script>
 
